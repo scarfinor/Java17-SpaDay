@@ -4,7 +4,7 @@ body {
 
 div {
     margin: auto;
-    width: 50%;
+    width: 100%;
     padding: 10px;
     text-align: center;
     background-color: white;
@@ -12,7 +12,7 @@ div {
 
 h1 {
     margin: auto;
-        width: 50%;
+        width: 100%;
         padding: 10px;
         text-align: center;
         background-color: white;
@@ -20,7 +20,55 @@ h1 {
 
 table {
     margin: auto;
-            width: 50%;
-            padding: 10px;
+            width: 100%;
+            padding: 70px;
             text-align: center;
+}
+html {
+border-bottom-style none
+border-bottom-width 0px
+border-image-outset 0
+border-image-repeat stretch
+border-image-slice 100%
+border-image-source none
+border-image-width 1
+border-left-color rgb(53, 74, 95)
+border-left-style none
+border-left-width 0px
+border-right-color rgb(53, 74, 95)
+border-right-style none
+border-right-width 0px
+border-top-color rgb(53, 74, 95)
+border-top-style none
+border-top-width 0px
+box-sizing border-box
+color rgb(53, 74, 95)
+color-scheme light only
+cursor pointer
+display block
+font-family "Work Sans", Helvetica, Tahoma, Geneva, Arial, sans-serif
+font-size 16.25px
+font-weight 300
+height 676.903px
+line-height 25.5775px
+margin-left 16.5909px
+margin-right 16.5909px
+max-height 95%
+max-width 95%
+outline-color rgb(53, 74, 95)
+outline-style none
+outline-width 0px
+overflow-clip-margin content-box
+overflow-wrap break-word
+overflow-x auto
+overflow-y auto
+padding-bottom 0px
+padding-left 0px
+padding-right 0px
+padding-top 0px
+text-align center
+text-size-adjust 100%
+text-wrap nowrap
+white-space-collapse collapse
+width 630.455px
 }

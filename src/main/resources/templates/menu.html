@@ -3,13 +3,39 @@
 <head>
     <meta charset="UTF-8" />
     <title>Spa Menu</title>
-    <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
 </head>
 <body>
 <h1>My Super Fancy Spa</h1>
-<div id = "clientProfile">
+<div id="clientProfile">
+    <h2>My Profile</h2>
+    <p th:text="${name}"></p>
+    <p th:text="${skintype}"></p>
+    <p th:text="${manipedi}"></p>
 </div>
-<div id = "servicesMenu">
+<div id="servicesMenu">
+    <h2>Menu of Available Services</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Facial Treatments</th>
+        </tr>
+        </thead>
+        <tbody>
+        <td>The facial treatments below are recommended by our estheticians for your given skin type.</td>
+        <tr th:block th:each="facial : ${appropriateFacials}">
+            <td th:text="${facial}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <div th:if="${manipedi.contains('manicure')}">
+        <h3>Manicure</h3>
+        <div th:replace="fragments :: manicureDescription"></div>
+    </div>
+    <div th:if="${manipedi.contains('pedicure')}">
+        <h3>Pedicure</h3>
+        <div th:replace="fragments :: pedicureDescription"></div>
+    </div>
 </div>
 </body>
 </html>
